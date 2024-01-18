@@ -1,5 +1,6 @@
 body{
     width: 100%;
+    overflow-x: hidden;
     min-height: auto;
     font-family: "helvetica";
     margin: 0;
@@ -131,6 +132,7 @@ button:focus{
 }
 
 @media only screen and (max-width : 800px){
+   
   .container{
     display: block !important;
     width: 100%;
@@ -165,6 +167,15 @@ button:focus{
       width: 100%;
     }
 
+}
+
+.footer-content{
+    width: 100%;
+    background-color: darkslategrey;
+    color: white;
+    text-align: center;   
+    padding: 1px 0px;
+    margin-top: 48px;
 }
 
 
