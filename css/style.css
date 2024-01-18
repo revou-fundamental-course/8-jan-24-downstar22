@@ -1,0 +1,171 @@
+body{
+    width: 100%;
+    min-height: auto;
+    font-family: "helvetica";
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: darkslategrey;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li{
+    float: left;
+    vertical-align: middle;
+    display: inline;
+    font-size: 24px;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    &:nth-child(1){
+        padding-left: 48px;
+    }
+    &:nth-child(2){
+        float: right;
+        line-height: normal;
+        
+    }
+}
+.column{
+    flex: 50%;
+    transition: ease-in-out 0.2s;
+}
+.img-persegi{
+    text-align: right;
+}
+.img-persegi img{
+    width: 50vh;
+}
+.calculation{
+    text-align: center;
+}
+.calculation button{
+    padding: 14px 40px;
+    border-radius: 0px;
+    font-size: 14px;
+    border: 1px solid darkslategrey;
+    cursor: pointer;
+    color: black;
+    background-color: transparent;
+    transition: ease-in-out 0.2s;
+    &&:hover{
+        color: white;
+        background-color: darkslategrey;
+    }
+}
+button:focus{
+    color: white;
+    background-color: darkslategrey;
+}
+.display-none{
+    display: none;
+}
+.form-active{
+    display: block !important;
+    margin-top: 24px;
+    padding-left: 48px;
+}
+
+.num-input{
+    border-radius: 0px;
+    border: 1px solid darkslategrey;
+    height: 32px;
+    width: 204px;
+    font-size: 18px;
+    font-weight: 400;
+    &&:focus{
+        outline: none; 
+    }
+}
+.calc-container button{
+    margin-top: 12px;
+    padding: 12px 30px;
+    border-radius: 0px;
+    font-size: 14px;
+    border: 1px solid darkslategrey;
+    cursor: pointer;
+    color: black;
+    background-color: transparent;
+    transition: ease-in-out 0.2s;
+    &&:hover{
+        color: white;
+        background-color: darkslategrey;
+    }
+}
+.rum-input{
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    margin-left: -1px;
+}
+.rum-input3{
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    margin-top: 5px;
+    color: red;
+    display: none;
+}
+.rum-active{
+    display: block;
+}
+.rum-input2{
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    margin-left: -1px;
+    margin-top: 12px;
+}
+
+@media only screen and (max-width : 800px){
+  .container{
+    display: block !important;
+    width: 100%;
+  }
+  .img-persegi{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .img-persegi img{
+    width: 100%;
+  }
+  .container_luas{
+    text-align: center !important;
+    margin-left: -60px;
+  }
+  .rum-input3{
+    width: 100%;
+    text-align: center;
+  }
+  .rum-input2{
+    width: 100%;
+    text-align: center;
+  }
+  .rum-input{
+    width: 100%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width : 700px){
+
+    .img-persegi img{
+      width: 100%;
+    }
+
+}
+
+
+
